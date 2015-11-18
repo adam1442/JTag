@@ -1,0 +1,142 @@
+.supertagbox {
+	/*width:700px;*/
+	background:#f9f9f9;
+	padding:5px;
+	margin:10px 0;
+	position:relative;
+	border:1px solid #ddd;
+	-moz-border-radius:5px;
+}
+.supertag {
+	/*width:209px;*/
+	clear:none;
+	background:#eee;
+	padding:0;
+	margin:5px 5px 10px;
+	border:1px solid #bbb;
+	font-size:.7em;
+	min-height:30px;
+	position:relative;
+	-moz-border-radius:3px;
+}
+.taglist .supertag {
+	float:left;
+	margin:5px;
+}
+.supertag.editing {
+	background-color:#fff;
+}
+.supertagval {
+	margin:0 50px 0 10px;
+	display:block;
+	line-height:20px;
+	padding:5px 0;
+}
+#editingbox {
+	display:block;
+	/*position:absolute;
+	top:0;
+	bottom:0;
+	left:9px;
+	right:70px;
+	background:#fff;*/
+}
+#editingbox input, #editingbox textarea {
+	border:0;
+	outline:0;
+	padding:0;
+	background:#fff;
+	font-family:'Segoe UI',Arial,Tahoma,sans-serif;
+	font-size:1em;
+	margin-left:-1px;
+	margin-right:-4px;
+	line-height:20px;
+}
+
+.supertagbutton {
+	display:block;
+	position:absolute;
+	top:0;
+	background-color:#eee;
+	background-repeat:no-repeat;
+	text-align:center;	
+	border-left:1px solid #ddd;
+	cursor:pointer;
+	height:100%;
+}
+.editing .supertagbutton {
+	background-color:#fff;
+}
+.supertagbutton.remove {
+	right:0;
+	width:20px;
+	background-image:url(remove.png);
+	background-position:-5px 50%;
+	-moz-border-radius-topright:3px;
+	-moz-border-radius-bottomright:3px;
+}
+.supertagbutton.edit {
+	right:21px;
+	width:20px;
+	background-image:url(edit.png);
+	background-position:-5px 50%;
+}
+.editing .supertagbutton.remove {
+	background-position:-65px 50%;
+	border-color:#fff;
+}
+.editing .supertagbutton.edit {
+	background-position:-65px 50%;
+	border-color:#fff;
+}
+
+.supertagbutton:hover {
+	background-color:#fff;
+}
+.supertagbutton.remove:hover {
+	background-position:-35px 50%;
+}
+.supertagbutton.edit:hover {
+	background-position:-35px 50%;
+}
+
+.editing .supertagbutton.remove:hover {
+	background-position:-95px 50% !important;
+}
+.editing .supertagbutton.edit:hover {
+	background-position:-95px 50% !important;
+}
+
+
+.addbox {
+	background:#ddd;
+	margin:5px -5px -5px -5px;
+	padding:10px 15px;
+	text-align:center;
+	font-size:.8em;
+	position:relative;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-bottomleft:5px;
+}
+.bulletlist .addbox {
+	margin-top:10px;
+}
+
+.addbox input {
+	padding:3px;
+}
+
+.addtext {
+	width:400px;
+}
+
+.delimiter {
+	float:right;
+	margin:1px -3px 0 0;
+}
+.delimiterdisplay {
+	padding:5px 12px;
+	background:#eee;
+	line-height:30px;
+	border:1px solid #ccc;
+}

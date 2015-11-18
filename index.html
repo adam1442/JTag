@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>mtag Example</title>
+	<link rel="stylesheet" type="text/css" href="resources/mtag.css"/>
+	<script src="resources/jquery.min.js" type="text/javascript"></script>
+	<script src="resources/mtag.js" type="text/javascript"></script>
+	<style type="text/css">
+		body {
+			background:#eee;
+			margin:0;
+			padding:0;
+			font-family:'Segoe UI',Arial,Tahoma,sans-serif;
+		}
+		#main {
+			background:#fff;
+			padding:40px;
+			width:800px;
+			margin:30px auto;
+			-moz-border-radius:8px;
+			-moz-box-shadow: 0px 5px 30px #aaa;
+			position:relative;
+		}
+		p {
+			margin:60px 0;
+		}
+		textarea {
+			padding:5px;
+		}
+		.clearfloat {
+			clear:both;
+			text-size:0;
+			height:0;
+		}
+		#showboxes {
+			position:absolute;
+			top:10px;
+			right:15px;
+			cursor:pointer;
+			font-size:.8em;
+			color:#aaa;
+		}
+		#showboxes:hover {
+			color:#555;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#showboxes").click(function(){
+				$(".mtag").toggle(500);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="main">
+		<div id="showboxes">Toggle Raw Form Field Visibility</div>
+		<form>
+			<p>
+				<label for="metaempty">Empty Tag List powered by Text Area</label><br/>
+				<textarea rows="5" cols="60" id="metaempty" class="mtag"></textarea>
+			</p>
+			<p>
+				<label for="metabullet">Bullet List with content already in it powered by Text Area</label><br/>
+				<textarea rows="5" cols="60" id="metabullet" class="mtag list">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia ullamcorper justo, a hendrerit dolor vestibulum et. Suspendisse potenti. Ut convallis arcu in nisi volutpat tempor.;Suspendisse ac nisi ut libero ullamcorper pulvinar nec et arcu. In hac habitasse platea dictumst.;Suspendisse non mi velit. Etiam eget enim diam. Maecenas laoreet euismod sapien ac pretium.;Mauris nulla nibh, aliquet ac ultricies non, ultricies vel diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae Donec vel ligula ante.;</textarea>
+			</p>
+			<p>
+				<label for="metaet">Empty Tag List powered by Text Box</label><br/>
+				<input type="text" id="metaet" class="mtag" value=""/>
+			</p>
+			<p>
+				<label for="metastuff">Tag List with content already in it powered by Text Box</label><br/>
+				<input type="text" id="metastuff" class="mtag" value="stuff 1;stuff 2;stuff 3;stuff 4;stuff 5"/>
+			</p>
+		</form>
+	</div>
+
+</body>
+
+</html>
